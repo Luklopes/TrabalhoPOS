@@ -8,7 +8,7 @@ const server = http.createServer(function(req,res){
 // })
 
 
-const port = (process.env.PORT | 3000)
+const port = (process.env.PORT || 3000)
 
 server.listen(port, function(){
     console.log('servidor rodando --> http//localhost:3000')
